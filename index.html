@@ -225,14 +225,14 @@
   </section>
 
   <section>
-    <h2>Esta página crece contigo 🌱</h2>
+    <h2>Esto te hice con mucho cariño y esto va crecer contigo 🌱</h2>
     <p class="sub">cada día hay algo nuevo, hecho solo para ti</p>
     <div class="counter" id="counter"></div>
   </section>
 
   <section>
     <h2>📅 Calendario de detalles</h2>
-    <p class="sub">cada día de verdad se abre uno nuevo (hora de Ecuador)</p>
+    <p class="sub">Cada día hay un detalle para ti</p>
     <div class="panel">
       <div class="calhead"><button id="prev">‹</button><h3 id="mes"></h3><button id="next">›</button></div>
       <div class="week"><span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span><span>Dom</span></div>
@@ -243,7 +243,7 @@
 
   <section>
     <h2>🌷 Tu jardín de flores</h2>
-    <p class="sub">toca el jardín para plantar flores, ¡es todo tuyo!</p>
+    <p class="sub">toca el jardín para plantar flores, y asi haces un ramo lindo de flores</p>
     <div class="panel">
       <div class="picker" id="picker">
         <button data-t="rand" class="on">🎲</button><button data-t="rose">🌹</button><button data-t="sunflower">🌻</button><button data-t="tulip">🌷</button><button data-t="daisy">🌼</button><button data-t="cosmos">🌸</button>
@@ -262,14 +262,14 @@
     <div class="panel">
       <div class="arena" id="arena">
         <div class="hud"><span>⭐ <b id="score">0</b></span><span>⏱ <b id="time">20</b></span></div>
-        <div class="overlay" id="ov"><div id="ovtxt">¿Lista, Valeria? 💗</div><button class="btn" id="play">¡Jugar!</button></div>
+        <div class="overlay" id="ov"><div id="ovtxt">¿Lista, mi princesa Valeria? 💗</div><button class="btn" id="play">¡Jugar!</button></div>
       </div>
     </div>
   </section>
 
   <section>
     <h2>🎁 Elige una cajita</h2>
-    <p class="sub">dentro hay un vale, y todos son para ti</p>
+    <p class="sub">dentro hay un detalle y todos son para ti lo que quiero compartir</p>
     <div class="panel">
       <div class="gifts" id="gifts"><div class="gift">🎁</div><div class="gift">🎁</div><div class="gift">🎁</div></div>
       <div class="prize" id="prize">Toca la que más te llame la atención ✨</div>
@@ -303,7 +303,7 @@
     <div id="resp"></div>
   </section>
 
-  <footer>Hecho con todo mi cariño para ti ✨<br><small>(tus amiguitos te esperan arriba 🐰🐻🍓)</small></footer>
+  <footer>Hecho con todo mi cariño para ti ✨<br><small>Stalin Espinoza</small></footer>
 </main>
 
 <div class="modal" id="modal"><div class="box"><div class="pp"><svg class="kw" viewBox="0 0 100 100" id="mpic"></svg></div><h3 id="mt"></h3><p id="mp"></p><button class="btn" id="mclose">¡Gracias! 💗</button></div></div>
@@ -379,7 +379,7 @@ function mensaje(y,m,d){
 }
 
 // ===== Texto que se escribe =====
-const frases=["Hola, Valeria 🌸","Hay personas que llegan y cambian el color de los días.","Tú eres una de ellas. 💗","Esta página es solo para ti ✨"];
+const frases=["Hola, Valeria 🌸","Hay personas que llegan y cambian el color de los días.","Tú eres una de ellas. 💗","Esto es solo para ti ✨"];
 (function(){let f=0,c=0,b=false;const el=$('typed');
  function p(){const t=frases[f];el.firstChild?el.firstChild.nodeValue=t.slice(0,c):el.textContent=t.slice(0,c);
   if(!b&&c<t.length){c++;setTimeout(p,55)}else if(!b){b=true;setTimeout(p,1700)}else if(c>0){c--;setTimeout(p,20)}else{b=false;f=(f+1)%frases.length;setTimeout(p,350)}}
@@ -530,14 +530,14 @@ function fin(){
 
 // ===== Cajitas =====
 const vales=[
- ["🍦","Vale por un helado, el sabor lo eliges tú"],
- ["🤗","Vale por un abrazo de oso cuando lo necesites"],
- ["🎬","Vale por una tarde de películas con snacks"],
- ["🍫","Vale por un chocolatito sorpresa"],
- ["🌸","Vale por una flor y una sonrisa"],
- ["🎶","Vale por una playlist hecha solo para ti"],
- ["📸","Vale por una sesión de fotos sin pena"],
- ["🍕","Vale por una pizza compartida (tú escoges de qué)"]
+ ["🍦","Vamos por un helado, el sabor lo eliges tú"],
+ ["🤗","Te doy un abrazo de oso cuando lo necesites"],
+ ["🎬","Una linda tarde de películas con snacks"],
+ ["🍫","Vamos por un chocolatito sorpresa"],
+ ["🌸","Te debo un chiste y sacarte una linda sonrisa"],
+ ["🎶","Te creo una playlist hecha solo para ti"],
+ ["📸","Vamos por una sesión de fotos sin pena"],
+ ["🍕","Vamos por una pizza compartida tú escoges el sabor"]
 ];
 document.querySelectorAll('.gift').forEach(g=>g.onclick=()=>{
   const v=vales[Math.floor(Math.random()*vales.length)];
